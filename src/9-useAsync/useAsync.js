@@ -19,5 +19,5 @@ export default function useAsync(callback, dependencies = []) {
     callbackMemoized()
   }, [callbackMemoized])
 
-  return { loading, error, value }
+  return [ loading, error, value ]
 }
