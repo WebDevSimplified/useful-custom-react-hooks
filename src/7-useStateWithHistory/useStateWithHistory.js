@@ -48,12 +48,10 @@ export default function useStateWithHistory(
   return [
     value,
     set,
-    {
-      history: historyRef.current,
-      pointer: pointerRef.current,
-      back,
-      forward,
-      go,
-    },
+    history: historyRef.current,
+    pointer: pointerRef.current,
+    back,
+    forward,
+    go
   ]
 }
