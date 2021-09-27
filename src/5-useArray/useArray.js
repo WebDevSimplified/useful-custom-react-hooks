@@ -15,12 +15,12 @@ export default function useArray(defaultValue) {
     setArray(a => [
       ...a.slice(0, index),
       newElement,
-      ...a.slice(index + 1, a.length - 1),
+      ...a.slice(index + 1, a.length),
     ])
   }
 
   function remove(index) {
-    setArray(a => [...a.slice(0, index), ...a.slice(index + 1, a.length - 1)])
+    setArray(a => [...a.slice(0, index), ...a.slice(index + 1, a.length)])
   }
 
   function clear() {

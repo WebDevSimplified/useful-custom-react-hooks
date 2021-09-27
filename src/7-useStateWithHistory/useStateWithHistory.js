@@ -40,7 +40,7 @@ export default function useStateWithHistory(
   }, [])
 
   const go = useCallback(index => {
-    if (index < 0 || index >= historyRef.current.length - 1) return
+    if (index < 0 || index > historyRef.current.length - 1) return
     pointerRef.current = index
     setValue(historyRef.current[pointerRef.current])
   }, [])
