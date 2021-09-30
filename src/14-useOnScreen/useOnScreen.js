@@ -4,7 +4,6 @@ export default function useOnScreen(ref, rootMargin = "0px") {
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    console.log(ref.current)
     if (ref.current == null) return
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting),
