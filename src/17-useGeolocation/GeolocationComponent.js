@@ -1,13 +1,11 @@
-import { useRef } from "react"
 import useGeolocation from "./useGeolocation"
 
 export default function GeolocationComponent() {
-  const ref = useRef()
   const {
     loading,
     error,
     data: { latitude, longitude },
-  } = useGeolocation(ref)
+  } = useGeolocation()
 
   return (
     <>

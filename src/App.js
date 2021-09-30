@@ -33,13 +33,13 @@ function App() {
   // return <ScriptComponent />
   // return <DeepCompareEffectComponent />
   // return <EventListenerComponent />
-  return <OnScreenComponentComponent />
+  // return <OnScreenComponentComponent />
   // return <WindowSizeComponent />
   // return <MediaQueryComponent />
   // return <GeolocationComponent />
   // return <StateWithValidationComponent />
   // return <SizeComponent />
-  // return <EffectOnceComponent />
+  return <EffectOnceComponent />
 }
 
 export default App
