@@ -18,6 +18,11 @@ import GeolocationComponent from "./17-useGeolocation/GeolocationComponent"
 import StateWithValidationComponent from "./18-useStateWithValidation/StateWithValidationComponent"
 import SizeComponent from "./19-useSize/SizeComponent"
 import EffectOnceComponent from "./20-useEffectOnce/EffectOnceComponent"
+import ClickOutsideComponent from "./21-useClickOutside/ClickOutsideComponent"
+import DarkModeComponent from "./22-useDarkMode/DarkModeComponent"
+import CopyToClipboardComponent from "./23-useCopyToClipboard/CopyToClipboardComponent"
+import CookieComponent from "./24-useCookie/CookieComponent"
+import TranslationComponent from "./25-useTranslation/TranslationComponent"
 
 function App() {
   // return <ToggleComponent />
@@ -33,13 +38,18 @@ function App() {
   // return <ScriptComponent />
   // return <DeepCompareEffectComponent />
   // return <EventListenerComponent />
-  return <OnScreenComponentComponent />
+  // return <OnScreenComponentComponent />
   // return <WindowSizeComponent />
   // return <MediaQueryComponent />
   // return <GeolocationComponent />
   // return <StateWithValidationComponent />
   // return <SizeComponent />
   // return <EffectOnceComponent />
+  // return <ClickOutsideComponent />
+  // return <DarkModeComponent />
+  // return <CopyToClipboardComponent />
+  // return <CookieComponent />
+  return <TranslationComponent />
 }
 
 export default App
