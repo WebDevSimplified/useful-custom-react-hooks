@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useRef } from "react"
 
 export default function useTimeout(callback, delay) {
+  // Hook that helps us create other hooks
+
   const callbackRef = useRef(callback)
   const timeoutRef = useRef()
 
