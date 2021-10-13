@@ -1,5 +1,6 @@
 {
-  "hi": "Hello",
-  "bye": "Goodbye",
-  "nested": { "value": "Test" }
+	"hi": "Hello",
+	"bye": "Goodbye",
+	"nested": {"value": "Test"},
+	"logo": "https://media.idownloadblog.com/wp-content/uploads/2018/07/Apple-logo-black-and-white.png"
 }

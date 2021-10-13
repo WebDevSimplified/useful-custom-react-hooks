@@ -1,3 +1,7 @@
+body {
+	transition: all 1s linear;
+}
+
 body.dark-mode {
-  background-color: #333;
+	background-color: #333;
 }

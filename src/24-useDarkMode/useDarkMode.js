@@ -6,6 +6,7 @@ export default function useDarkMode() {
 	const [darkMode, setDarkMode] = useLocalStorage("useDarkMode")
 	const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)")
 	const enabled = darkMode ?? prefersDarkMode
+	console.log(prefersDarkMode)
 
 	useEffect(() => {
 		document.body.classList.toggle("dark-mode", enabled)
