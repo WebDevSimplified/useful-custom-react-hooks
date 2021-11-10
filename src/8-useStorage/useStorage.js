@@ -13,7 +13,7 @@ function useStorage(key, defaultValue, storageObject) {
     const jsonValue = storageObject.getItem(key)
     if (jsonValue != null) return JSON.parse(jsonValue)
 
-    if (typeof initialValue === "function") {
+    if (typeof defaultValue === "function") {
       return defaultValue()
     } else {
       return defaultValue
