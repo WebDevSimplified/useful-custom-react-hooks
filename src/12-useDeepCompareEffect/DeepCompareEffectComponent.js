@@ -9,6 +9,15 @@ export default function DeepCompareEffectComponent() {
 
   const person = { age: age, name: "Kyle" }
 
+  // useEffect() will run everytime any part of state -> i.e. "age" and "otherCount".
+
+  // Whereas, useDeepCompareEffect() will run only as when "age" is updated and not when other parts of "state" of this component such as "otherCount" are updated. This is because we save the actual "person" obj as our ref (and dependency (for the useEffect inside of useDeepCompareEffect)) and not just its address. 
+  
+  // So even when component is rebuilt when some other part of its state changes, because of same value of "person" object as its previous value (no change in dependency) , the callback inside useDeepCompareEffect is never called
+
+  // ALTERNATIVE METHOD - memoize "person" object using useMemo()
+  // const person = useMemo({ age: age, name: "Kyle" },[age])
+
   useEffect(() => {
     useEffectCountRef.current.textContent =
       parseInt(useEffectCountRef.current.textContent) + 1
