@@ -36,6 +36,8 @@ export default function OnScreenComponentComponent() {
         nostrum iusto eveniet illo corrupti dicta. Non fuga exercitationem sit
         dignissimos voluptatibus cumque nobis iste asperiores illum fugit
       </div>
+
+      {/* Rendering a string based on whether this h1 tag is visible (with/without margin offsets) in window viewport */}
       <h1 ref={headerTwoRef}>Header 2 {visible && "(Visible)"}</h1>
       <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde incidunt,
