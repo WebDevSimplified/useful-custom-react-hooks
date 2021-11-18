@@ -1,8 +1,12 @@
 import useStateWithValidation from "./useStateWithValidation"
 
 export default function StateWithValidationComponent() {
-  const [username, setUsername, isValid] = useStateWithValidation(
+  const [username, setUsername, isValid] = useStateWithValidation
+  (
+    // Custom validation logic function
     name => name.length > 5,
+  
+    // initial state value
     ""
   )
 

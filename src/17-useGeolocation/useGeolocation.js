@@ -15,16 +15,23 @@ export default function useGeolocation(options) {
       setError(e)
       setLoading(false)
     }
+
+    // Simple Promise to navigationAPI in JS with a resolve (successHandler) and reject (errorHandler) functions that update our loading, data and error states accordingly
+    // Here, we can even pass some config options to the navigationAPI
     navigator.geolocation.getCurrentPosition(
       successHandler,
       errorHandler,
       options
     )
+
+    // A "subscription/listener" type Promise to the navigation API with resolve, reject handlers
     const id = navigator.geolocation.watchPosition(
       successHandler,
       errorHandler,
       options
     )
+
+    // Clearing out the "listener" when component is unmounted
     return () => navigator.geolocation.clearWatch(id)
   }, [options])
 
