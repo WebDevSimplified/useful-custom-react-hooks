@@ -2,6 +2,5 @@
   "hi": "Hello",
   "bye": "Goodbye",
 
-  // nested object in key-value pairs of a language
   "nested": { "value": "Test" }
 }
